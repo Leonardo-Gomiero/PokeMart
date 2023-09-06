@@ -1,0 +1,8 @@
+/* Estilo para centralizar o componente */
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Para centralizar na vertical, ocupando a altura total da tela */
+  }
+  

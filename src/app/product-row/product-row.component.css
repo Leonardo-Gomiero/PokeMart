@@ -1,0 +1,27 @@
+.img-small {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+.product-box-small {
+    max-width: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.product-description {
+    text-align: center;
+}
+
+.product-description h4 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.product-description p {
+    font-size: 1rem;
+    color: #666;
+}
