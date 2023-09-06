@@ -1,8 +1,48 @@
 /* Estilo para centralizar o componente */
 .container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    min-height: 100vh; /* Para centralizar na vertical, ocupando a altura total da tela */
-  }
-  
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    min-height: 100vh;
+    /* Para centralizar na vertical, ocupando a altura total da tela */
+}
+
+]
+
+/* Reset de estilos básicos */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o menu */
+.menu {
+    background-color: #e63746;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Pokemon', sans-serif;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ffd700;
+    /* Amarelo Pikachu quando passar o mouse */
+}
