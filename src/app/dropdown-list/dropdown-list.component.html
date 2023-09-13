@@ -1,20 +1,20 @@
 <div class="dropdown">
     <select [(ngModel)]="selectedOption">
         <option value="" disabled selected>Selecione uma opção</option>
-        <option value="opcao1">Opção 1</option>
-        <option value="opcao2">Opção 2</option>
-        <option value="opcao3">Opção 3</option>
+        <option value="PokéBall">PokéBall</option>
+        <option value="GreatBall">GreatBall</option>
+        <option value="UltraBall">UltraBall</option>
     </select>
 </div>
 
 <div class="row justify-content-center" style="display: flex;" *ngIf="selectedOption">
-    <!-- Produto 1 -->
+    
     <div class="col-md-4">
         <div class="product-box mb-3 product-box-small">
             <img [src]="'assets/' + images[selectedOption]" alt="{{ selectedOption }}" alt="Produto 1" class="img-fluid img-small">
             <div class="product-description">
                 <h4>{{ selectedOption }}</h4>
-                <p>Se liga na descrição</p>
+                <p>{{ descriptions[selectedOption] }}</p>
             </div>
         </div>
     </div>

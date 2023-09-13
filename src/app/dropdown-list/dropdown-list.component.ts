@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
 export class DropdownListComponent {
   selectedOption: string = '';
   descriptions: { [key: string]: string } = {
-    opcao1: 'Descrição da Opção 1',
-    opcao2: 'Descrição da Opção 2',
-    opcao3: 'Descrição da Opção 3'
+    PokéBall: 'A clássica e confiável PokéBall para capturar Pokémon.',
+    GreatBall: 'Uma opção mais eficaz para pegar Pokémon.',
+    UltraBall: 'A melhor escolha para capturar Pokémon desafiadores.'
   };
   images: { [key: string]: string } = {
-    opcao1: '../assets/images/PokeBall.png',
-    opcao2: '../assets/images/GreatBall.png',
-    opcao3: '../assets/images/UltraBall.png'
+    PokéBall: '../assets/images/PokeBall.png',
+    GreatBall: '../assets/images/GreatBall.png',
+    UltraBall: '../assets/images/UltraBall.png'
   };
 }
