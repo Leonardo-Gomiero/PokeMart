@@ -1,0 +1,16 @@
+<h2>Componente</h2>
+
+
+<label>Adicione um novo item na lista: <input [(ngModel)]="valueItem" /></label>
+
+<br />
+<button (click)="addNewItem()">Add item na lista</button>
+<button (click)="remove()">Limpar</button>
+
+<ul>
+    <li *ngFor="let elemento of itens">{{ elemento }}</li>
+
+</ul>
+
+<button (click)="removeItens()">Limpa lista 2</button>
+
