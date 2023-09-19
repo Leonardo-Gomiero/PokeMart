@@ -1,21 +1,33 @@
-<div class="dropdown">
-    <select [(ngModel)]="selectedOption">
-        <option value="" disabled selected>Selecione uma opção</option>
-        <option value="PokéBall">PokéBall</option>
-        <option value="GreatBall">GreatBall</option>
-        <option value="UltraBall">UltraBall</option>
-    </select>
-</div>
+<menu>
 
-<div class="row justify-content-center" style="display: flex;" *ngIf="selectedOption">
-    
-    <div class="col-md-4">
-        <div class="product-box mb-3 product-box-small">
-            <img [src]="'assets/' + images[selectedOption]" alt="{{ selectedOption }}" alt="Produto 1" class="img-fluid img-small">
-            <div class="product-description">
-                <h4>{{ selectedOption }}</h4>
-                <p>{{ descriptions[selectedOption] }}</p>
+    <div class="dropdown">
+        <select class="select" [(ngModel)]="selectedOption">
+            <option class="opcao" value="" disabled selected>Selecione uma opção</option>
+            <option class="opcao" value="PokéBall">PokéBall</option>
+            <option class="opcao" value="GreatBall">GreatBall</option>
+            <option class="opcao" value="UltraBall">UltraBall</option>
+        </select>
+        <ul class="menu">
+            <li class="menu-item">Item 1</li>
+            <li class="menu-item">Item 2</li>
+            <li class="menu-item">Item 3</li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <div class="row justify-content-center" style="display: flex;" *ngIf="selectedOption">
+            <div class="col-md-4">
+                <div class="product-box mb-3 product-box-small">
+                    <img [src]="'assets/' + images[selectedOption]" alt="{{ selectedOption }}" alt="Produto 1"
+                        class="img-fluid img-small">
+                    <div class="product-description">
+                        <h4>{{ selectedOption }}</h4>
+                        <p>{{ descriptions[selectedOption] }}</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+</menu>
