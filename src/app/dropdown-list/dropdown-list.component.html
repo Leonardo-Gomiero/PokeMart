@@ -7,11 +7,7 @@
             <option class="opcao" value="GreatBall">GreatBall</option>
             <option class="opcao" value="UltraBall">UltraBall</option>
         </select>
-        <ul class="menu">
-            <li class="menu-item">Item 1</li>
-            <li class="menu-item">Item 2</li>
-            <li class="menu-item">Item 3</li>
-        </ul>
+        
     </div>
 
 
@@ -23,7 +19,8 @@
                         class="img-fluid img-small">
                     <div class="product-description">
                         <h4>{{ selectedOption }}</h4>
-                        <p>{{ descriptions[selectedOption] }}</p>
+                        <h5>{{ descriptions[selectedOption] }}</h5>
+                        <p>{{ prices[selectedOption] }}</p>
                     </div>
                 </div>
             </div>

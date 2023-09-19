@@ -17,4 +17,9 @@ export class DropdownListComponent {
     GreatBall: '../assets/images/GreatBall.png',
     UltraBall: '../assets/images/UltraBall.png'
   };
+  prices: { [key: string]: string } = {
+    PokéBall: 'R$200,00',
+    GreatBall: 'R$600,00',
+    UltraBall: 'R$1200,00'
+  };
 }
