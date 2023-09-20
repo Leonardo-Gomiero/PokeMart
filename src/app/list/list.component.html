@@ -1,16 +1,22 @@
-<h2>Componente</h2>
+<h2>Suggestions</h2>
 
 
-<label>Adicione um novo item na lista: <input [(ngModel)]="valueItem" /></label>
+<label>What would you like to see in our store? <input [(ngModel)]="valueItem" /></label>
 
 <br />
-<button (click)="addNewItem()">Add item na lista</button>
-<button (click)="remove()">Limpar</button>
+
+<div class="push-button">
+    <button (click)="addNewItem()">Add item</button>
+</div>
+<br>
+<div class="push-button">
+    <button (click)="remove()">Clear</button>
+</div>
 
 <ul>
     <li *ngFor="let elemento of itens">{{ elemento }}</li>
-
 </ul>
 
-<button (click)="removeItens()">Limpa lista 2</button>
-
+<div class="push-button">
+    <button (click)="removeItens()">Clear List</button>
+</div>

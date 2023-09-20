@@ -1,15 +1,12 @@
 <menu>
-
     <div class="dropdown">
         <select class="select" [(ngModel)]="selectedOption">
-            <option class="opcao" value="" disabled selected>Selecione uma opção</option>
+            <option class="opcao" value="" disabled selected>Select an option</option>
             <option class="opcao" value="PokéBall">PokéBall</option>
             <option class="opcao" value="GreatBall">GreatBall</option>
             <option class="opcao" value="UltraBall">UltraBall</option>
         </select>
-        
     </div>
-
 
     <div class="container">
         <div class="row justify-content-center" style="display: flex;" *ngIf="selectedOption">
@@ -26,5 +23,4 @@
             </div>
         </div>
     </div>
-
 </menu>

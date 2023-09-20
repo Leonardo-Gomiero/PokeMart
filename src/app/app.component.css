@@ -1,19 +1,17 @@
-/* Estilo para centralizar o componente */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column;
 }
 
-/* Reset de estilos básicos */
 body,
 ul {
     margin: 0;
     padding: 0;
 }
 
-/* Estilos para o menu */
 .menu {
     background-color: #e63746;
     text-align: center;
@@ -41,7 +39,6 @@ ul {
     color: #ffd700;
 }
 
-/* Adicione o background color ao corpo (body) */
 body {
-    background-color: #f2f2f2; /* Altere para a cor de fundo desejada */
+    background-color: #f2f2f2;
 }

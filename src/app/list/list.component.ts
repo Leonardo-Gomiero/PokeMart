@@ -7,7 +7,7 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class ListComponent {
-  itens = ['Frango a parmegiana', 'Contra filé', 'Milanesa', 'Bife à cavalo'];
+  itens = ['Potion', 'Super Potion', 'Hyper Potion', 'Max Potion', 'Full Restore'];
 
   valueItem = '';
 

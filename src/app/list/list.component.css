@@ -18,3 +18,25 @@
     margin-top: 10px;
   }
   
+  ul {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+
+  .push-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    background-color: #323741;
+    transition: transform 0.2s;
+}
+
+.push-button button:hover {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transform: scale(1.1);
+}
