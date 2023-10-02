@@ -83,8 +83,13 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/images/favicon.ico",
-              "src/images/assets"
+              "src/favicon.ico",
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "src/assets/images/",
+                "output": "assets/images/"
+              }
             ],
             "styles": [
               "src/styles.css"
