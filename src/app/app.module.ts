@@ -4,11 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductRowComponent } from './product-row/product-row.component';
-import { ListComponent } from './list/list.component';
+import { ProductRowComponent } from './components/product-row/product-row.component';
+import { ListComponent } from './components/list/list.component';
 import { FormsModule } from '@angular/forms';
-import { DropdownListComponent } from './dropdown-list/dropdown-list.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { DropdownListComponent } from './components/dropdown-list/dropdown-list.component';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 
 
 @NgModule({

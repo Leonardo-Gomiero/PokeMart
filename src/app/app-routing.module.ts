@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DropdownListComponent } from './dropdown-list/dropdown-list.component';
+import { DropdownListComponent } from './components/dropdown-list/dropdown-list.component';
 import { ProductRowComponent } from './product-row/product-row.component';
 
 const routes: Routes = [
