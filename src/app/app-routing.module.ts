@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DropdownListComponent } from './dropdown-list/dropdown-list.component';
+import { ProductRowComponent } from './product-row/product-row.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: DropdownListComponent },
+  { path: 'offers', component: ProductRowComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

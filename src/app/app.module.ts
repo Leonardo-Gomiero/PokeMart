@@ -8,6 +8,7 @@ import { ProductRowComponent } from './product-row/product-row.component';
 import { ListComponent } from './list/list.component';
 import { FormsModule } from '@angular/forms';
 import { DropdownListComponent } from './dropdown-list/dropdown-list.component';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
 
 
 @NgModule({
@@ -17,13 +18,14 @@ import { DropdownListComponent } from './dropdown-list/dropdown-list.component';
     ListComponent,
     AppComponent,
     DropdownListComponent,
-    
+    NavMenuComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
