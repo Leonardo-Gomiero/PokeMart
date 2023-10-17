@@ -9,6 +9,7 @@ import { ListComponent } from './components/list/list.component';
 import { FormsModule } from '@angular/forms';
 import { DropdownListComponent } from './components/dropdown-list/dropdown-list.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
 
   ],
   providers: [],
