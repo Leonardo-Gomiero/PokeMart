@@ -13,6 +13,7 @@ import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ConectaComponent } from './components/conecta/conecta.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     DropdownListComponent,
     NavMenuComponent,
     ConectaComponent,
+    AboutUsComponent,
 
   ],
   imports: [
