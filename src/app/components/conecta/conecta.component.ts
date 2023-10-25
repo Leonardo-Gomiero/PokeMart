@@ -15,6 +15,7 @@ export class ConectaComponent {
   clientResult: valoresPost = {} as valoresPost;
   vItemNome: string = "";
   vItemJob: string = "";
+  alertContent: string = "";
 
   chamadaBack() {
     this.val = [];
@@ -24,6 +25,8 @@ export class ConectaComponent {
         console.log(resposta.data);
         this.val = (resposta.data);
         console.log(this.val);
+        this.alertContent = this.getFormattedAlertContent(); // Define o conteúdo do alert
+        this.backAlert(); // Chama o alert aqui após definir o conteúdo
       }
     )
   }
@@ -36,8 +39,19 @@ export class ConectaComponent {
       (resp: any) => {
         this.clientResult = (resp);
         console.log(this.clientResult);
+        this.alertContent = this.getFormattedAlertContent(); // Define o conteúdo do alert
+        this.backAlert(); // Chama o alert aqui após definir o conteúdo
       }
     )
+  }
+
+  backAlert() {
+    window.alert(this.alertContent);
+  }
+
+  getFormattedAlertContent(): string {
+    // Esta função formata o conteúdo do alert como desejar
+    return this.val.map(result => `${result.id} - ${result.first_name} ${result.last_name}`).join('\n');
   }
 
 }

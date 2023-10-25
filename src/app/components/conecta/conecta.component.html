@@ -8,11 +8,7 @@
 
   <button (click)="chamadaBack()">Teste do Back Get</button>
   <br />
-  <ul *ngFor="let result of val">
-    <li>
-      {{result.id}} - {{result.first_name}} {{result.last_name}}
-    </li>
-  </ul>
+
   <hr />
   <br />
   <label>Entre com o nome: <input [(ngModel)]="vItemNome" /></label>
