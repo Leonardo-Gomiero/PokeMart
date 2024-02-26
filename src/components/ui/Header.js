@@ -11,8 +11,10 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import ImageBox from '../pieces/ImageBox';
+import Title from '../pieces/Title';
 
-import Logo from '../src/Images/icon.png';
+import Logo from '../../assets/icon.png';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -40,35 +42,8 @@ function ResponsiveAppBar() {
         <AppBar position="static" sx={{ backgroundColor: '#0093C9' }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <Box
-                        component="img"
-                        sx={{
-                            width: 'auto',
-                            height: '50px',
-                            display: { xs: 'none', md: 'flex' },
-                            marginRight: '2vw',
-                        }}
-                        alt="PokeMart Logo"
-                        src={Logo}
-                    />
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        href="#app-bar-with-responsive-menu"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '0.1vw',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        PokéMart
-                    </Typography>
-
+                    
+                    
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -105,34 +80,11 @@ function ResponsiveAppBar() {
                             ))}
                         </Menu>
                     </Box>
-                    <Box
-                        component="img"
-                        sx={{
-                            width: '43px',
-                            display: { xs: 'flex', md: 'none' },
-                            marginRight: '2vw',
-                        }}
-                        alt="PokeMart Logo"
-                        src={Logo}
-                    />
-                    <Typography
-                        variant="h5"
-                        noWrap
-                        component="a"
-                        href="#app-bar-with-responsive-menu"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        PokéMart
-                    </Typography>
+                    
+                    <ImageBox logoSrc={Logo} altText="PokeMart Logo" />
+
+                    <Title>PokéMart</Title>
+
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
                             <Button
@@ -174,6 +126,7 @@ function ResponsiveAppBar() {
                             ))}
                         </Menu>
                     </Box>
+
                 </Toolbar>
             </Container>
         </AppBar>
