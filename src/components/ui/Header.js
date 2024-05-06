@@ -13,6 +13,8 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import ImageBox from '../pieces/ImageBox';
 import Title from '../pieces/Title';
+import { Link } from "react-router-dom";
+import '../../styles/header.css';
 
 import Logo from '../../assets/icon.png';
 
@@ -42,8 +44,6 @@ function ResponsiveAppBar() {
         <AppBar position="static" sx={{ backgroundColor: '#0093C9' }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    
-                    
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -75,12 +75,16 @@ function ResponsiveAppBar() {
                         >
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                    <Typography textAlign="center">
+                                        <Link to={`/${page.toLowerCase()}`} className="nav-link">
+                                            {page}
+                                        </Link>
+                                    </Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
                     </Box>
-                    
+
                     <ImageBox logoSrc={Logo} altText="PokeMart Logo" />
 
                     <Title>PokéMart</Title>
@@ -92,7 +96,9 @@ function ResponsiveAppBar() {
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
-                                {page}
+                                <Link to={`/${page.toLowerCase()}`} className="nav-link">
+                                    {page}
+                                </Link>
                             </Button>
                         ))}
                     </Box>

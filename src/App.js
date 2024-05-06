@@ -1,9 +1,9 @@
-import Header from "./components/ui/Header";
+import Home from "./pages/home.jsx";
 
 function App() {
   return (
     <div>
-      <Header/>
+      <Home/>
     </div>
   );
 }
